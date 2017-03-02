@@ -356,7 +356,7 @@ The following C++ code generates such a graph:
     ARX[0][0] = Object (1.0, 0, 0);          // arc (D0,S0) with cost 1
     ARX[0][1] = Object (2.0, 0, 1);          // arc (D0,S1) with cost 2
 
-Once the graph is prepared, GAmap can be called using the following C++ code:
+Once the graph is prepared, `GAmap` can be called using the following C++ code:
 
     /* auction variables */
     mfloat MX  = 4.0;  // auction starting (maximum) step size
@@ -370,7 +370,7 @@ Once the graph is prepared, GAmap can be called using the following C++ code:
     gslv.Solve (T, PR);
 
 The resulting transport map can be used to compute the primal solution. Given an
-arc list ARX and transport map T computed as above, the following C++ code
+arc list `ARX` and transport map `T` computed as above, the following C++ code
 computes the primal solution:
 
     /* compute primal */
@@ -386,7 +386,7 @@ computes the primal solution:
       }
     }
 
-Given DWT, SWT, ARX, and the price list PR, the dual solution can be computed
+Given `DWT`, `SWT`, `ARX`, and the price list `PR`, the dual solution can be computed
 using the following C++ code:
 
     /* compute dual */
